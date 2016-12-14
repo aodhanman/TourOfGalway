@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_convert"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.aodhan.tourofgalway.convert"
+    android:background="@drawable/currency">
+
+    <Button
+        android:text="Convert Euro"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="41dp"
+        android:layout_marginEnd="41dp"
+        android:id="@+id/eurobutton"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="36dp"
+        android:background="@android:color/darker_gray" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/eurotext"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="11dp"
+        android:textSize="26sp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginStart="52dp"
+        android:layout_alignTop="@+id/eurobutton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/dollartext"
+        android:textSize="26sp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/eurobutton"
+        android:layout_alignLeft="@+id/eurotext"
+        android:layout_alignStart="@+id/eurotext" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/sterlingtext"
+        android:textSize="26sp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="51dp"
+        android:layout_below="@+id/dollartext"
+        android:layout_alignLeft="@+id/dollartext"
+        android:layout_alignStart="@+id/dollartext" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:textSize="26sp"
+        android:background="@android:color/darker_gray"
+        android:layout_alignBaseline="@+id/dollartext"
+        android:layout_alignBottom="@+id/dollartext"
+        android:layout_alignLeft="@+id/eurobutton"
+        android:layout_alignStart="@+id/eurobutton"
+        android:text="Dollar"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:textSize="26sp"
+        android:background="@android:color/darker_gray"
+        android:layout_alignBaseline="@+id/sterlingtext"
+        android:layout_alignBottom="@+id/sterlingtext"
+        android:layout_alignLeft="@+id/eurobutton"
+        android:layout_alignStart="@+id/eurobutton"
+        android:text="Sterling"
+        android:textStyle="normal|bold" />
+</RelativeLayout>
